@@ -20,7 +20,7 @@
     </style>
   </head>
   <body>
-    <form action="form-echo.php" method="get">
+    <form action="/lab3/form-echo.php" method="get">
       <h3>แบบฟอร์มจองทัวร์</h3>
       <fieldset>
         <legend>ข้อมูลทั่วไป</legend>
@@ -109,11 +109,11 @@
         <input id="tourist" type="number" name="tourist" min=1 max=10>
         <br>
         <label>เน้นการท่องเที่ยวแบบใด? :</label><br>
-        <input type="checkbox" name="travel" value="shopping">ชอปปิ้ง
+        <input type="checkbox" name="travel[]" value="shopping">ชอปปิ้ง
         <br>
-        <input type="checkbox" name="travel" value="nature">ธรรมชาติ
+        <input type="checkbox" name="travel[]" value="nature">ธรรมชาติ
         <br>
-        <input type="checkbox" name="travel" value="ocean">ทะเล
+        <input type="checkbox" name="travel[]" value="ocean">ทะเล
         <br>
       </fieldset>
 
